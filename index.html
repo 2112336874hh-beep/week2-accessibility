@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>Week2 실습 - 접근성</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <h1>제주대학교 - 기초웹개발론</h1>
+    <nav aria-label="주요 메뉴">
+      <ul>
+        <li><a href="#main">메인</a></li>
+        <li><a href="#about">과목 소개</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section aria-labelledby="s1">
+      <h2 id="s1">과제 안내</h2>
+      <p>시맨틱 태그(header, nav, main, footer 등)와 ARIA/alt를 적용해 보세요.</p>
+      <button type="button" aria-label="과제 제출 안내 보기">제출 안내</button>
+      <figure>
+        <img src="sample.jpg" alt="웹 접근성을 설명하는 예시 이미지">
+        <figcaption>예시 이미지에 반드시 alt를 넣어요.</figcaption>
+      </figure>
+    </section>
+    <section id="about" aria-labelledby="s2">
+      <h2 id="s2">과목 소개</h2>
+      <ul>
+        <li>시맨틱 HTML</li>
+        <li>웹 접근성 (스크린리더, 확대/축소, Lighthouse)</li>
+        <li>Git/GitHub 협업 흐름</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2025 Jeju Univ.</small>
+  </footer>
+</body>
+</html>
