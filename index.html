@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Week 3 - Intro Rotator</title>
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Arial, sans-serif; margin: 40px; line-height: 1.6; }
+    .card { max-width: 760px; padding: 24px; border: 1px solid #e5e7eb; border-radius: 16px; }
+    h1 { margin: 0 0 8px; }
+    .muted { color: #6b7280; }
+    pre { white-space: pre-wrap; word-break: break-word; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1 id="title">안녕하세요! 👋</h1>
+    <p class="muted">아래 자기소개 텍스트는 <code>setInterval</code>로 3초마다 바뀝니다.</p>
+    <pre class="mono" id="intro"></pre>
+  </div>
+
+  <noscript>이 페이지는 자바스크립트를 필요로 합니다. 브라우저 설정에서 자바스크립트를 켜주세요.</noscript>
+  <script src="./app.js"></script>
+</body>
+</html>
