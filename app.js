@@ -1,14 +1,11 @@
-// Week 3 실습 예시 코드
-// 요구사항: 템플릿 리터럴 사용, setInterval 사용, 여러 함수를 만들어 3초마다 다른 소개글이 뜨도록 하기
-
-// 1) 상수(const)와 변수(let)
+//
 const NAME = "조의";             // 你的名字，想换就改
 const MAJOR = "컴퓨터공학과";     // 你的专业，想换就改
 let turn = 0;                    // 当前第几条介绍
 
 // 2) 사용 템플릿 리터럴의 여러 소개 함수
 function introBasic() {
-  return `안녕하세요, 저는 "Hello, " 조의입니다. 전공은 "Hello, " 컴퓨터공학과 이고, 지금 자바스크립트 기초를 공부하고 있어요.`;
+  return `안녕하세요, 저는 ${NAME}입니다. 전공은 ${MAJOR}이고, 지금 자바스크립트 기초를 공부하고 있어요.`;
 }
 
 function introStudy() {
